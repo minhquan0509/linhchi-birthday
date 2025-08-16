@@ -9,7 +9,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
 // Password system
 let currentPassword = "";
-const CORRECT_PASSWORD = "1234"; // Change this to your girlfriend's birthday (MMDD format)
+const CORRECT_PASSWORD = "1708"; // Change this to your girlfriend's birthday (MMDD format)
 
 function initPasswordSystem() {
   const numberBtns = document.querySelectorAll(".number-btn");
