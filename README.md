@@ -111,10 +111,10 @@ const CORRECT_PASSWORD = "MMDD"; // Month and Day format
 
 Edit `styles.css` to modify the color scheme:
 
-- Main pink: `#ff69b4`
-- Dark pink: `#ff1493`
-- Light pink: `#ffb3d9`
-- Very light pink: `#ffe6f2`
+- Main pink: `#f2c2cf`
+- Dark pink: `#d88ba3`
+- Light pink: `#e8a5b8`
+- Very light pink: `#fdf2f5`
 
 ### **Personalizing Messages**
 
@@ -130,7 +130,7 @@ Edit the HTML content in each screen:
 - **HTML5**: Semantic structure with modern elements
 - **CSS3**: Advanced animations, gradients, and responsive design
 - **JavaScript ES6+**: Interactive features and dynamic content
-- **Fonts**: Google Fonts (Roboto) - Excellent Vietnamese language support
+- **Fonts**: Google Fonts (Roboto) with system fallbacks - Excellent Vietnamese language support and Safari compatibility
 - **Emojis**: Unicode emojis for cute decorations
 - **Responsive**: Mobile-first design approach
 - **Multi-Screen**: Smooth transitions between different views

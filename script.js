@@ -311,7 +311,7 @@ function showAllImages() {
 
 // Special effects
 function createConfetti() {
-  const colors = ["#ff69b4", "#ff1493", "#ffb3d9", "#ffe6f2", "#ff99cc"];
+  const colors = ["#f2c2cf", "#d88ba3", "#e8a5b8", "#fdf2f5", "#d88ba3"];
   const shapes = ["💖", "💕", "💗", "💓", "💝", "✨", "🌸"];
 
   for (let i = 0; i < 20; i++) {
@@ -421,13 +421,13 @@ function showSuccessMessage(message) {
         position: fixed;
         top: 20px;
         right: 20px;
-        background: linear-gradient(45deg, #ff69b4, #ff1493);
+        background: linear-gradient(45deg, #f2c2cf, #d88ba3);
         color: white;
         padding: 15px 25px;
         border-radius: 25px;
         font-weight: 600;
         z-index: 10000;
-        box-shadow: 0 5px 20px rgba(255, 105, 180, 0.4);
+        box-shadow: 0 5px 20px rgba(242, 194, 207, 0.4);
         animation: slideInRight 0.5s ease-out;
     `;
 
