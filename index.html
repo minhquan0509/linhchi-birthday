@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>🎂 LinhChi's Birthday! 💖</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <!-- Floating hearts background -->
+      <div class="floating-hearts">
+        <div class="heart">💖</div>
+        <div class="heart">💕</div>
+        <div class="heart">💗</div>
+        <div class="heart">💓</div>
+        <div class="heart">💝</div>
+        <div class="heart">💖</div>
+        <div class="heart">💕</div>
+        <div class="heart">💗</div>
+      </div>
+
+      <!-- Screen 1: Password Entry -->
+      <div class="screen" id="passwordScreen">
+        <div class="password-container">
+          <h1 class="title">🎂 LinhChi's Birthday! 🎉</h1>
+          <p class="subtitle">Nhập mã số bí mật để mở khóa 💝</p>
+
+          <div class="password-input-container">
+            <div class="password-display">
+              <span class="password-dot" id="dot1">○</span>
+              <span class="password-dot" id="dot2">○</span>
+              <span class="password-dot" id="dot3">○</span>
+              <span class="password-dot" id="dot4">○</span>
+            </div>
+
+            <div class="number-pad">
+              <button class="number-btn" data-number="1">1</button>
+              <button class="number-btn" data-number="2">2</button>
+              <button class="number-btn" data-number="3">3</button>
+              <button class="number-btn" data-number="4">4</button>
+              <button class="number-btn" data-number="5">5</button>
+              <button class="number-btn" data-number="6">6</button>
+              <button class="number-btn" data-number="7">7</button>
+              <button class="number-btn" data-number="8">8</button>
+              <button class="number-btn" data-number="9">9</button>
+              <button class="number-btn" data-number="0">0</button>
+              <button class="clear-btn">Clear</button>
+              <button class="enter-btn">Enter</button>
+            </div>
+          </div>
+
+          <div class="error-message" id="errorMessage"></div>
+        </div>
+      </div>
+
+      <!-- Screen 2: Congratulations -->
+      <div class="screen" id="congratsScreen" style="display: none">
+        <div class="congrats-container">
+          <h1 class="title">🎉 Giỏi ghê 🎉</h1>
+          <div class="congrats-content">
+            <div class="success-icon">✅</div>
+            <h2 class="congrats-title">Đoán đúng rùi nè 🎯</h2>
+            <p class="congrats-message">Chúc mừng sinh nhật vợ xinh đẹp 💖</p>
+            <p class="gift-message">Anh có món quà nhỏ tặng em 🎁</p>
+            <button class="next-btn" onclick="showAlbumScreen()">
+              Xem quà 💝
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Screen 3: Interactive Album -->
+      <div class="screen" id="albumScreen" style="display: none">
+        <div class="album-container">
+          <h1 class="title">📸 Beautiful Memories 💕</h1>
+          <p class="album-subtitle">Những tấm ảnh xinh của em nè ✨</p>
+
+          <div class="album-viewer">
+            <div class="album-main">
+              <div class="image-container">
+                <img
+                  id="currentImage"
+                  src="images/photo1.jpg"
+                  alt="Special Memory"
+                  class="album-image"
+                />
+                <div class="image-overlay">
+                  <div class="image-counter">
+                    <span id="currentImageNumber">1</span> /
+                    <span id="totalImages">4</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="album-controls">
+              <button class="control-btn prev-btn" onclick="previousImage()">
+                ◀ Previous
+              </button>
+              <button
+                class="control-btn view-all-btn"
+                onclick="showAllImages()"
+              >
+                View All 📷
+              </button>
+              <button class="control-btn next-btn" onclick="nextImage()">
+                Next ▶
+              </button>
+            </div>
+          </div>
+
+          <div class="album-navigation">
+            <button class="nav-btn" onclick="goToImage(1)">1</button>
+            <button class="nav-btn" onclick="goToImage(2)">2</button>
+            <button class="nav-btn" onclick="goToImage(3)">3</button>
+            <button class="nav-btn" onclick="goToImage(4)">4</button>
+          </div>
+
+          <button class="final-btn" onclick="showFinalScreen()">
+            Đọc thư của anh 💌
+          </button>
+        </div>
+      </div>
+
+      <!-- Screen 4: Final Message -->
+      <div class="screen" id="finalScreen" style="display: none">
+        <div class="final-container">
+          <h1 class="title">💌Lời nhắn iu thương 💌</h1>
+
+          <div class="message-content">
+            <div class="message-heart">💖</div>
+            <p class="message-text">
+              Chúc mừng sinh nhật vợ iu 22 tuổi. Hi vọng em thích món quà nhỏ
+              này. Thời gian vừa rồi chúng mình nhiều trục trặc, nhưng anh vẫn
+              luôn yêu em nhiều lắm. Thật may là chúng mình vẫn còn ở bên nhau
+              và vẫn còn yêu thương nhau từng ngày.
+            </p>
+
+            <p class="message-text">
+              Tuổi mới chúc vợ iu của anh nhiều sức khỏe, đỡ đau ốm, luôn luôn
+              xinh đẹp và vui vẻ nhắng nhít, yêu anh hơn bây giờ nha. Tuổi 22 sẽ
+              là 1 chặng đường mới, chắc sẽ nhiều thứ mới lạ chờ đón em ở phía
+              trước, nhưng anh sẽ vẫn luôn ở đây động viên và đồng hành cùng em
+              nhá. Mong là chúng mình sẽ có đủ tình yêu và chia sẻ cảm thông để
+              đồng hành cùng nhau đi thật xa nha vợ iu.
+            </p>
+
+            <p class="message-text">
+              Anh yêu em nhiều lắm 💕 Mong là em bé sẽ có 1 ngày sinh nhật vui
+              vẻ và ý nghĩa.
+            </p>
+
+            <div class="love-meter">
+              <span>Love Level:</span>
+              <div class="love-bar">
+                <div class="love-fill"></div>
+              </div>
+              <span class="love-percentage">100%</span>
+            </div>
+          </div>
+
+          <div class="final-hearts">
+            <span class="final-heart">💖</span>
+            <span class="final-heart">💕</span>
+            <span class="final-heart">💗</span>
+            <span class="final-heart">💓</span>
+            <span class="final-heart">💝</span>
+          </div>
+
+          <button class="restart-btn" onclick="restartWebsite()">
+            Quay lại 🔄
+          </button>
+        </div>
+      </div>
+
+      <!-- All Images View Modal -->
+      <div class="modal" id="allImagesModal">
+        <div class="modal-content">
+          <span class="close">&times;</span>
+          <h3>📸 Những tấm ảnh xinh 💕</h3>
+          <div class="all-images-grid" id="allImagesGrid">
+            <!-- Images will be populated by JavaScript -->
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
